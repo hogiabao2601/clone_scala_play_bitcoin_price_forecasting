@@ -1,0 +1,26 @@
+# Ignore Play! working directory #
+bin/
+/db
+.eclipse
+/lib/
+/logs/
+/modules
+/project/project
+/project/target
+/target
+tmp/
+test-result
+server.pid
+*.eml
+/dist/
+.cache
+.idea/*
+api/target
+model/target
+scala_play_bitcoin_price_forecasting.iml
+scheduler/target
+spark/target
+util/target
+Docker/Postgres/data/
+Docker/Redis/data/
+Docker/Spark/data/

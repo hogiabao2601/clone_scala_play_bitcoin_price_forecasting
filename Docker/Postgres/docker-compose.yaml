@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+  postgres:
+    image: postgres:10
+    container_name: postgres.bao.ho
+    hostname: postgres.bao.ho
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: bao.ho
+      POSTGRES_PASSWORD: bao.ho
+      PGDATA: /data/postgres
+    volumes:
+       - ./data/postgres:/data/postgres
+    ports:
+      - "5432:5432"
+#    networks:
+#      - bao.ho
+#
+#
+#networks:
+#  bao.ho:
+#    external:
+#      name: bao.ho.network

@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  redis:
+    image: redis:4.0.10
+    container_name: redis.bao.ho
+    hostname: redis.bao.ho
+    restart: unless-stopped
+    environment:
+      REDIS_PASSWORD: `
+    volumes:
+       - ./data/redis:/data
+    ports:
+      - "6379:6379"
+#    networks:
+#      - bao.ho
+#
+#
+#networks:
+#  bao.ho:
+#    external:
+#      name: bao.ho.network
